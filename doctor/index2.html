@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>MyOmma Doctor Dashboard</title>
+
+        <meta name="description" content="ProUI is a Responsive Bootstrap Admin Template created by pixelcave and published on Themeforest.">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="icon" type="image/png" href="img/icons/MyOmma.ico"/>
+        <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
+        <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
+        <link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
+        <link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
+        <link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
+        <link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
+        <link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
+        <link rel="apple-touch-icon" href="img/icon180.png" sizes="180x180">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Bootstrap is included in its original form, unaltered -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Related styles of various icon packs and plugins -->
+        <link rel="stylesheet" href="css/plugins.css">
+
+        <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+
+        <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+        <link rel="stylesheet" href="css/themes.css">
+        <!-- END Stylesheets -->
+
+        <!-- Modernizr (browser feature detection library) -->
+        <script src="js/vendor/modernizr.min.js"></script>
+    </head>
+    <body>
+        <!-- Page Wrapper -->
+        <!-- In the PHP version you can set the following options from inc/config file -->
+        <!--
+            Available classes:
+
+            'page-loading'      enables page preloader
+        -->
+        <div id="page-wrapper">
+           
+                <!-- END Main Sidebar -->
+
+                <!-- Main Container -->
+    <div id="main-container">
+                    <!-- Header -->
+                  
+
+                    <!-- Page content -->
+        <div id="page-content">
+                        <!-- Social Widgets Header -->
+                        <div class="content-header">
+                            <div class="header-section">
+                                <ul class="nav navbar-nav-custom pull-right navbar navbar-default">
+
+
+                           
+
+                            <!-- User Dropdown -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar"> <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+                                    <li class="dropdown-header text-center">Account</li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user pull-right"></i>
+                                            
+                                            Profile
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-credit-card fa-fw pull-right"></i>
+                                            
+                                            Payments
+                                        </a>
+                                       
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="lock-screen.html">
+                                            <i class="fa fa-lock fa-fw pull-right"></i>
+                                            Lock Account
+                                        </a>
+                                        <!-- Opens the user settings modal that can be found at the bottom of each page (page_footer.html in PHP version) -->
+                                        <a href="#" data-toggle="modal">
+                                            <i class="fa fa-sign-out fa-fw pull-right"></i>
+                                            LogOut
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    
+                                </ul>
+                            </li>
+                            <!-- END User Dropdown -->
+                        </ul>
+                                <h1>
+                                   Welcome Dr. John Wick<br><small>Your MyOmma Portal</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <!-- END Social Widgets Header -->
+
+                        <!-- First row diagnosis codes, video call, common codes -->
+                        
+            <div class="row equal">
+            
+            
+                <div class="col-sm-6 col-md-6 d-flex pb-3  ">
+                     <div class="widget">
+                        <div class="widget-advanced">
+                                    
+                    
+                            
+                            <!-- Datatables Content -->
+                        
+                            <div class="block full">
+                                <div class="block-title">
+                                    <h2><strong>Patient</strong> Seen</h2>
+                                </div>
+
+                                <div id="chartContainer" style="height: 250px; max-width: 920px; margin: 0px auto;"></div>
+
+                           
+                                <!-- END Datatables Content -->
+                       
+                            </div>
+                        </div>
+                    
+                                <!-- END Advanced Active Theme Color Widget -->
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 d-flex pb-1">
+                     <div class="widget">
+                        <div class="widget-advanced">
+                                    
+                    
+                            
+                            <!-- Datatables Content -->
+                        
+                            <div class="block full">
+                                <div class="block-title">
+                                    <h2><strong>Earnings</strong></h2>
+                                </div>
+
+                                <div style="height: 250px; max-width: 920px; margin: 0px auto;">
+                                    <table class="table table-vcenter table-bordered">
+                                <thead class="">
+                                    <tr>
+                                        <th>1st Col.</th>
+                                        <th class="hidden-xs">2nd Col.</th>
+                                        <th class="hidden-sm hidden-xs">3rd Col.</th>
+                                        <th style="width: 150px;" class="text-center">4th Col.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Some text..</td>
+                                        <td>Some text..</td>
+                                        <td>Some text..</td>
+                                        <td>Some text..</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Some text..</td>
+                                        <td>Some text..</td>
+                                        <td>Some text..</td>
+                                        <td>Some text..</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                                </div>
+
+                           
+                                <!-- END Datatables Content -->
+                       
+                            </div>
+                        </div>
+                    
+                                <!-- END Advanced Active Theme Color Widget -->
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                        
+                        <!-- END First row diagnosis codes, video call, common codes -->
+
+            
+            </div>
+
+    <div class="row">
+
+
+                 <div class="col-sm-6 col-md-6 d-flex pb-1">
+                     <div class="widget">
+                        <div class="widget-advanced">
+                                    
+                    
+                            
+                            <!-- Datatables Content -->
+                        
+                            <div class="block full">
+                                <div class="block-title">
+                                    <h2><strong>Login</strong> Report</h2>
+                                </div>
+
+                                <div style="height: auto; max-width: 920px; margin: 0px auto;">
+                                    <table class="table table-vcenter table-stripped">
+                                <tbody>
+                                    <tr>
+                                        <td>Some text..</td>
+                                        <td>Some text..</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Some text..</td>
+                                        <td>Some text..</td>
+                                    </tr>
+                                     <tr>
+                                        <td>Some text..</td>
+                                        <td>Some text..</td>
+                                    </tr>
+                                     <tr>
+                                        <td>Some text..</td>
+                                        <td>Some text..</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                                </div>
+
+                           
+                                <!-- END Datatables Content -->
+                       
+                            </div>
+                        </div>
+                    
+                                <!-- END Advanced Active Theme Color Widget -->
+                    </div>
+                </div>
+            
+            
+                <div class="col-sm-6 col-md-6 d-flex pb-1">
+                     <div class="widget">
+                        <div class="widget-advanced">
+                            
+                            <!-- Datatables Content -->
+                        
+                            
+                        </div>
+                    
+                                <!-- END Advanced Active Theme Color Widget -->
+                    </div>
+                </div>
+    </div>
+
+    <div class="row">
+
+
+                <div class="col-sm-6 col-md-4 d-flex pb-1 text-right">
+                     <div class="widget">
+                        <div class="widget-advanced">
+                                    
+                          
+                           
+                        </div>
+                    
+                                <!-- END Advanced Active Theme Color Widget -->
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 text-right">
+                     <div class="widget">
+                        <div class="widget-advanced">
+                                    
+                          
+                           
+                        </div>
+                    
+                                <!-- END Advanced Active Theme Color Widget -->
+                    </div>
+                </div>
+
+
+                 <div class="col-sm-6 col-md-4 text-right">
+                     <div class="widget">
+                        <div class="widget-advanced">
+                                    
+                          <a href="index.html" style="text-decoration: none;"><button type="button" class="btn btn-lg btn-block btn-primary">See Patients Now</button></a>
+                           
+                        </div>
+                    
+                                <!-- END Advanced Active Theme Color Widget -->
+                    </div>
+                </div>
+    </div>
+</div>
+                    
+                    
+                    <!-- END Page Content -->
+
+                    <!-- Footer -->
+                    <footer class="clearfix">
+                        
+                        <div class="pull-left">
+                            <span style="color: green;">Copyright © 2019 MyOmma | All Rights Reserved</span>
+                        </div>
+                    </footer>
+                    <!-- END Footer -->
+                </div>
+                <!-- END Main Container -->
+            </div>
+            <!-- END Page Container -->
+
+        <!-- Scroll to top link, initialized in js/app.js - scrollToTop() -->
+        <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
+
+        <!-- User Settings, modal which opens from Settings link (found in top right user menu) and the Cog link (found in sidebar user info) -->
+        <div id="modal-user-settings" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
+                        <h2 class="modal-title"><i class="fa fa-pencil"></i> Settings</h2>
+                    </div>
+                    <!-- END Modal Header -->
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" onsubmit="return false;">
+                            <fieldset>
+                                <legend>Vital Info</legend>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Username</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">Admin</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="user-settings-email">Email</label>
+                                    <div class="col-md-8">
+                                        <input type="email" id="user-settings-email" name="user-settings-email" class="form-control" value="admin@example.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="user-settings-notifications">Email Notifications</label>
+                                    <div class="col-md-8">
+                                        <label class="switch switch-primary">
+                                            <input type="checkbox" id="user-settings-notifications" name="user-settings-notifications" value="1" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Password Update</legend>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="user-settings-password">New Password</label>
+                                    <div class="col-md-8">
+                                        <input type="password" id="user-settings-password" name="user-settings-password" class="form-control" placeholder="Please choose a complex one..">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="user-settings-repassword">Confirm New Password</label>
+                                    <div class="col-md-8">
+                                        <input type="password" id="user-settings-repassword" name="user-settings-repassword" class="form-control" placeholder="..and confirm it!">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="form-group form-actions">
+                                <div class="col-xs-12 text-right">
+                                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END Modal Body -->
+                </div>
+            </div>
+        </div>
+        <!-- END User Settings -->
+
+        <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
+        <script src="js/vendor/jquery.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/app.js"></script>
+
+        <!-- Google Maps API Key (you will have to obtain a Google Maps API key to use Google Maps) -->
+        <!-- For more info please have a look at https://developers.google.com/maps/documentation/javascript/get-api-key#key -->
+        <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+        <script src="js/helpers/gmaps.min.js"></script>
+
+        <!-- Load and execute javascript code used only in this page -->
+        <script src="js/pages/widgetsSocial.js"></script>
+        <script>$(function(){ WidgetsSocial.init(); });</script>
+        
+          <!-- Load and execute javascript code used only in this page -->
+        <script src="js/pages/tablesDatatables.js"></script>
+        <script>$(function(){ TablesDatatables.init(); });</script>
+
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.canvasjs.min.js"></script>
+
+
+<script>
+window.onload = function () {
+
+var options = {
+    animationEnabled: true,  
+    title:{
+        text: ""
+    },
+    axisX: {
+        valueFormatString: "MMM"
+    },
+    axisY: {
+        title: "",
+        prefix: "$",
+        includeZero: false
+    },
+    data: [{
+        yValueFormatString: "$#,###",
+        xValueFormatString: "MMMM",
+        type: "spline",
+        dataPoints: [
+            { x: new Date(2017, 0), y: 25060 },
+            { x: new Date(2017, 1), y: 27980 },
+            { x: new Date(2017, 2), y: 33800 },
+            { x: new Date(2017, 3), y: 49400 },
+            { x: new Date(2017, 4), y: 40260 },
+            { x: new Date(2017, 5), y: 33900 },
+            { x: new Date(2017, 6), y: 48000 },
+            { x: new Date(2017, 7), y: 31500 },
+            { x: new Date(2017, 8), y: 32300 },
+            { x: new Date(2017, 9), y: 42000 },
+            { x: new Date(2017, 10), y: 52160 },
+            { x: new Date(2017, 11), y: 49400 }
+        ]
+    }]
+};
+$("#chartContainer").CanvasJSChart(options);
+
+}
+</script>
+
+    </body>
+</html>

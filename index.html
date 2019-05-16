@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MyOmma-login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/MyOmma.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="css/material-design-iconic-font.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic ">
+					<img src="images/myommalogo.png" alt="IMG" data-tilt><br>
+					<!-- <div class="omaheading"><h2 data-tilt style="font-family: sans-serif;"><span style="color: #90c53f; text-align: center" > My</span><span style="color: #45a548; text-align: center">Omma</span></h2><br></div> -->
+				
+				
+			<br>
+			 <div class="storebtn">
+			
+                <a href="https://www.apple.com/ios/app-store/" class="link"><img  src="images/ios.png" alt="Download on the App Store"></a>
+           
+			</div>
+			<div class="storebtn1">
+            
+                <a href="https://play.google.com/store" class="link"><img style="  "src="images/googleplay.png" alt="Download on Google Play"></a>
+            
+			</div>
+			<div class="des">
+			<p >
+<span style="color: green;"> MyOmma.</span>App is the fastest way to get in front of a doctor to learn if you are eligible for a recommendation letter for medical marijuana.
+
+			</p>
+			</div>
+				</div>
+				
+				
+			
+			
+				
+				
+				
+
+				<form class="login100-form validate-form">
+					<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+						
+						<!--<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-patient" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa fa-user "></i>  Patient</a>-->
+						<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> <i class="fa fa-user "></i> Doctor</a>
+						<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa fa-building "></i>  Dispensary</a>
+						</a>
+                    </div>
+					
+				 <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+				 
+                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+					
+					<div class="wrap-input100 validate-input"  data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+				
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+				
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" href="#">
+							Username / Password?
+						</a>
+						<div class="text-center p-t-10">
+					
+						<a class="txt2" href="" data-toggle="modal" data-target="#myModal">
+							Create your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+					</div>
+				</div>
+				
+				 <div class="tab-pane fade show" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+					
+					<div class="wrap-input100 validate-input"  data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+				
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+				
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+						
+					</div>
+					
+
+					<div class="text-center p-t-12">
+					
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" href="#">
+							Username / Password?
+						</a>
+						<div class="text-center p-t-10">
+					
+						<a class="txt2" href="" data-toggle="modal" data-target="#myModal1">
+							Create your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+						</div>
+							</div>
+					</div>
+
+					<div class="tab-pane fade show" id="nav-patient" role="tabpanel" aria-labelledby="nav-patient-tab">
+					
+					<div class="wrap-input100 validate-input"  data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+				
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+				
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+						
+					</div>
+					
+
+					<div class="text-center p-t-12">
+					
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" href="#">
+							Username / Password?
+						</a>
+						<div class="text-center p-t-10">
+					
+						<a class="txt2" href="" data-toggle="modal" data-target="#myModal2">
+							Create your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+						</div>
+							</div>
+					</div>
+				
+
+					
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+					
+			
+					<!-- ModalDoctor -->
+			
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-lg ">
+    
+						<!-- Modal content-->
+						
+			<div class="modal-content">
+
+							<form action="" id="wizard">
+								<!-- SECTION 1 -->
+									<h2></h2>
+								<section>
+										<div class="inner">
+												<div class="image-holder">
+													<img src="images/bg-2.jpg" alt="">
+												</div>
+											<div class="form-content" >
+													<div class="form-header">
+													<h3>Doctor Registration</h3>
+													</div>
+												<p class="">Please fill with your details</p>
+													<div class="form-row">
+														<div class="form-holder">
+														<input type="text" placeholder="First Name" class="form-control">
+														</div>
+														<div class="form-holder">
+														<input type="text" placeholder="Middle Name" class="form-control">
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+														<input type="text" placeholder="Last Name" class="form-control">
+														</div>
+														<div class="form-holder">
+														<input type="text" placeholder="Your Email" class="form-control">
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+														<input type="text" placeholder="Your Phone Number" class="form-control">
+														</div>
+														<div class="form-holder">
+														<input type="text" placeholder="Suffix" class="form-control">
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+														<input type="password" placeholder="Password" class="form-control">
+														</div>
+														<div class="form-holder">
+														<input type="password" placeholder="Confirm Password" class="form-control">
+														</div>
+														
+													</div>
+												</div>
+										</div>
+								</section>
+
+								<!-- SECTION 2 -->
+								<h2></h2>
+								<section>
+									<div class="inner">
+											<div class="image-holder">
+												<img src="images/bg-1.jpg" alt="">
+											</div>
+										<div class="form-content">
+											<div class="form-header">
+												<h3>Doctor Registration</h3>
+											</div>
+											<p>Please fill with additional info</p>
+											<div class="form-row">
+												<div class="form-holder ">
+													<input type="text" placeholder="Home Street Address" class="form-control">
+												</div>
+												<div class="form-holder ">
+													<input type="text" placeholder="Unit Number" class="form-control">
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-holder">
+													<input type="text" placeholder="Home City" class="form-control">
+												</div>
+												<div class="form-holder">
+													<input type="text" placeholder="Home Zip" class="form-control">
+												</div>
+											</div>
+
+											<div class="form-row">
+												<div class="select">
+													<div class="form-holder">
+														<div class="select-control form-control">Home State</div>
+														<i class="fa fa-down-arrow"></i>
+													</div>
+													<ul class="dropdown">
+														<li rel="United States">United States</li>
+														<li rel="United Kingdom">United Kingdom</li>
+														<li rel="Viet Nam">Viet Nam</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								
+								<!-- SECTION 3 -->
+								<h2></h2>
+								<section>
+									<div class="inner">
+										<div class="image-holder">
+											<img src="images/bg-1.jpg" alt="">
+										</div>
+										<div class="form-content">
+											<div class="form-header">
+												<h3>Doctor Registration</h3>
+											</div>
+											<p>Please fill with additional info</p>
+											<div class="form-row">
+												<div class="form-holder ">
+													<input type="text" placeholder="Office Street Address" class="form-control">
+												</div>
+												<div class="form-holder ">
+													<input type="text" placeholder="Unit Number" class="form-control">
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-holder">
+													<input type="text" placeholder="Office City" class="form-control">
+												</div>
+												<div class="form-holder">
+													<input type="text" placeholder="Office Zip" class="form-control">
+												</div>
+											</div>
+
+											<div class="form-row">
+												<div class="select">
+													<div class="form-holder">
+														<div class="select-control form-control">Office State</div>
+														<i class="fa fa-down-arrow"></i>
+													</div>
+													<ul class="dropdown dropdown-success">
+														<li rel="United States">United States</li>
+														<li rel="United Kingdom">United Kingdom</li>
+														<li rel="Viet Nam">Viet Nam</li>
+													</ul>
+												</div>
+												<div class="form-holder"></div>
+											</div>
+										</div>
+									</div>
+								</section>
+								
+								
+								<!-- SECTION 4 -->
+								<h2></h2>
+								<section>
+									<div class="inner">
+										<div class="image-holder">
+											<img src="images/bg-4.jpg" alt="">
+										</div>
+										<div class="form-content">
+											<div class="form-header">
+												<h3>Doctor Registration</h3>
+											</div>
+											<p>Licencing Entity</p>
+										
+										
+											<div class="form-row">
+												
+											
+												<div class="form-holder w-100">
+													<label><input type="checkbox" value="">&nbsp;&nbsp;Oklahoma Board of Medical & Supervision</label>
+												</div>
+												<div class="form-holder w-100">
+													<label><input type="checkbox" value="">&nbsp;&nbsp;Oklahoma State Board of ospteopathic Examiners</label>
+												</div>
+												<div class="form-row">
+												<div class="form-holder">
+													<input type="text" placeholder="Medical Licence No." class="form-control">
+												</div>
+												<div class="form-holder">
+													<input type="text" placeholder="NPI No." class="form-control">
+												</div>
+											</div>
+											</div>
+											<div class="checkbox-circle mt-24">
+												<label>
+													<input type="checkbox" checked>  Please accept <a href="#">terms and conditions </a>
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										
+									</div>
+								</section>
+							</form>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+						</div>
+				   
+					  
+					</div>
+		</div>		
+	</div>
+			
+			
+					<!-- ModalDispensary -->
+					
+	<div class="modal fade" id="myModal1" role="dialog">
+		<div class="modal-dialog modal-lg">
+    
+						<!-- Modal content-->
+						
+			<div class="modal-content">
+
+							<form action="" id="vizard">
+								<!-- SECTION 1 -->
+									<h2></h2>
+								<section>
+										<div class="inner">
+												<div class="image-holder">
+													<img src="images/bg-2.jpg" alt="">
+												</div>
+											<div class="form-content" >
+													<div class="form-header">
+														<h3>Dispensary Registration</h3>
+													</div>
+														<p class="">Please fill with your details</p>
+													<div class="form-row">
+														<div class="form-holder">
+														<input type="text" placeholder="First Name" class="form-control">
+														</div>
+														<div class="form-holder">
+														<input type="text" placeholder="Middle Name" class="form-control">
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+														<input type="text" placeholder="Last Name" class="form-control">
+														</div>
+														<div class="form-holder">
+														<input type="text" placeholder="Your Email" class="form-control">
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+														<input type="text" placeholder="Your Phone Number" class="form-control">
+														</div>
+														<div class="form-holder">
+														<input type="text" placeholder="Suffix" class="form-control">
+														</div>
+													</div>
+											</div>
+										</div>
+								</section>
+
+								<!-- SECTION 2 -->
+								<h2></h2>
+								<section>
+									<div class="inner">
+											<div class="image-holder">
+												<img src="images/bg-1.jpg" alt="">
+											</div>
+												<div class="form-content">
+													<div class="form-header">
+														<h3>Dispensary Registration</h3>
+													</div>
+													<p>Please fill with additional info</p>
+													<div class="form-row">
+														<div class="form-holder ">
+															<input type="text" placeholder="Office Address" class="form-control">
+														</div>
+														<div class="form-holder ">
+															<input type="text" placeholder="Unit Number" class="form-control">
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+															<input type="text" placeholder="Office City" class="form-control">
+														</div>
+														<div class="form-holder">
+															<input type="text" placeholder="Office Zip" class="form-control">
+														</div>
+													</div>
+
+													<div class="form-row">
+														<div class="select">
+															<select class="form-control">
+															      <option selected="" disabled="">Office State</option>
+															      <option>2</option>
+															      <option>3</option>
+															      <option>4</option>
+															      <option>5</option>
+															    </select>
+														</div>
+														<div class="form-holder"></div>
+													</div>
+												</div>
+									</div>
+								</section>
+
+								<!-- SECTION 3 -->
+								<h2></h2>
+								<section>
+							<div class="inner">
+										<div class="image-holder">
+											<img src="images/bg-4.jpg" alt="">
+										</div>
+										<div class="form-content">
+											<div class="form-header">
+												<h3>Dispensary Registration</h3>
+											</div>
+											<p>Licencing Entity</p>
+
+											<div class="form-row">
+												<div class="form-holder">
+													<input type="password" placeholder="Password" class="form-control">
+												</div>
+												<div class="form-holder">
+													<input type="password" placeholder="Confirm Password" class="form-control">
+												</div>
+											</div>
+
+											<div class="form-row">
+												<div class="form-holder">
+													<input type="text" placeholder="WebSite" class="form-control">
+												</div>
+												<div class="form-holder">
+													<input type="text" placeholder="QRCode" class="form-control">
+												</div>
+											</div>
+											
+											<div class="checkbox-circle mt-24">
+												<label>
+													<input type="checkbox" checked>  Please accept <a href="#">terms and conditions </a>
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										
+											</div>
+							</section>
+						</form>
+							</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+						</div>
+				   
+					  
+					</div>
+		</div>		
+	</div>
+
+					<!-- ModalUser -->
+			
+	<div class="modal fade" id="myModal2" role="dialog">
+		<div class="modal-dialog modal-lg">
+    
+						<!-- Modal content-->
+						
+			<div class="modal-content">
+
+							<form action="" id="pizard">
+								<!-- SECTION 1 -->
+									<h2></h2>
+								<section>
+										<div class="inner">
+												<div class="image-holder">
+													<img src="images/bg-2.jpg" alt="">
+												</div>
+											<div class="form-content" >
+													<div class="form-header">
+													<h3>Patient Registration</h3>
+													</div>
+												<p class="">Please fill with your details</p>
+													<div class="form-row">
+														<div class="form-holder">
+														<input type="text" placeholder="First Name" class="form-control">
+														</div>
+														<div class="form-holder">
+														<input type="text" placeholder="Middle Name" class="form-control">
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+														<input type="text" placeholder="Last Name" class="form-control">
+														</div>
+														<div class="form-holder">
+														<input type="text" placeholder="Your Email" class="form-control">
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+														<input type="text" placeholder="Your Phone Number" class="form-control">
+														</div>
+														<div class="form-holder">
+														<input type="text" placeholder="Suffix" class="form-control">
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+														<input type="password" placeholder="Password" class="form-control">
+														</div>
+														
+													</div>
+												</div>
+										</div>
+								</section>
+
+								<!-- SECTION 2 -->
+								<h2></h2>
+								<section>
+									<div class="inner">
+											<div class="image-holder">
+												<img src="images/bg-1.jpg" alt="">
+											</div>
+										<div class="form-content">
+											<div class="form-header">
+												<h3>User Registration</h3>
+											</div>
+											<p>Please fill with additional info</p>
+											<div class="form-row">
+												<div class="form-holder ">
+													<input type="text" placeholder="Home Street Address" class="form-control">
+												</div>
+												<div class="form-holder ">
+													<input type="text" placeholder="Unit Number" class="form-control">
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-holder">
+													<input type="text" placeholder="Home City" class="form-control">
+												</div>
+												<div class="form-holder">
+													<input type="text" placeholder="Home Zip" class="form-control">
+												</div>
+											</div>
+
+											<div class="form-row">
+												<div class="select">
+													<div class="form-holder">
+														<div class="select-control">Home country</div>
+														<i class="fa fa-down-arrow"></i>
+													</div>
+													<ul class="dropdown">
+														<li rel="United States">United States</li>
+														<li rel="United Kingdom">United Kingdom</li>
+														<li rel="Viet Nam">Viet Nam</li>
+													</ul>
+												</div>
+												<div class="form-holder"></div>
+											</div>
+										</div>
+									</div>
+								</section>
+								
+								<!-- SECTION 3 -->
+								<h2></h2>
+								<section>
+									<div class="inner">
+										<div class="image-holder">
+											<img src="images/bg-1.jpg" alt="">
+										</div>
+										<div class="form-content">
+											<div class="form-header">
+												<h3>User Registration</h3>
+											</div>
+											<p>Please fill with additional info</p>
+											<div class="form-row">
+												<div class="form-holder ">
+													<input type="text" placeholder="Mailing Address" class="form-control">
+												</div>
+												<div class="form-holder ">
+													<input type="text" placeholder="Unit Number" class="form-control">
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-holder">
+													<input type="text" placeholder="Mailing City" class="form-control">
+												</div>
+												<div class="form-holder">
+													<input type="text" placeholder="Mailing Zip" class="form-control">
+												</div>
+											</div>
+
+											<div class="form-row">
+												<div class="select">
+													<div class="form-holder">
+														<div class="select-control">Mailing State</div>
+														<i class="fa fa-down-arrow"></i>
+													</div>
+													<ul class="dropdown">
+														<li rel="United States">United States</li>
+														<li rel="United Kingdom">United Kingdom</li>
+														<li rel="Viet Nam">Viet Nam</li>
+													</ul>
+												</div>
+												<div class="form-holder"></div>
+											</div>
+										</div>
+									</div>
+								</section>
+								
+								
+								<!-- SECTION 4 -->
+								<h2></h2>
+								<section>
+							<div class="inner">
+										<div class="image-holder">
+											<img src="images/bg-4.jpg" alt="">
+										</div>
+										<div class="form-content">
+											<div class="form-header">
+												<h3>User Registration</h3>
+											</div>
+											
+										
+										
+											<div class="form-row">
+												
+											<div class="form-holder">
+													<input type="text" placeholder="Application Id" class="form-control">
+												</div>
+												<div class="form-holder">
+													<input type="text" placeholder="Omma Licenced Id" class="form-control">
+												</div>
+												<div class="form-row">
+												<div class="form-holder">
+													<input type="text" placeholder="Referal QRCode" class="form-control">
+												</div>
+												<div class="form-holder">
+													<input type="text" placeholder="Funds Paid on Account" class="form-control">
+												</div>
+											</div>
+											</div>
+											<div class="form-row">
+												<div class="select">
+													<div class="form-holder">
+														<div class="select-control">Status</div>
+														<i class="fa fa-down-arrow"></i>
+													</div>
+													<ul class="dropdown">
+														<li rel="United States">A</li>
+														<li rel="United Kingdom">B</li>
+														<li rel="Viet Nam">C</li>
+													</ul>
+												</div>
+												<div class="form-holder">
+														<input type="password" placeholder="Salt" class="form-control">
+												</div>
+											</div>
+											<div class="checkbox-circle mt-24">
+												<label>
+													<input type="checkbox" checked>  Please accept <a href="#">terms and conditions</a>
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										
+											</div>
+									</section>
+								</form>
+							</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+						</div>
+				   
+					  
+					</div>
+		</div>		
+	</div>
+
+					
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	
+	<!-- JQUERY -->
+		<script src="js/js/jquery-3.3.1.min.js"></script>
+
+		<!-- JQUERY STEP -->
+		<script src="js/js/jquery.steps.js"></script>
+		<script src="js/js/jquery.steps2.js"></script>
+		<script src="js/js/jquery.steps3.js"></script>
+		<script src="js/js/main.js"></script>
+		<script src="js/js/main1.js"></script>
+		<script src="js/js/main2.js"></script>
+
+</body>
+</html>
